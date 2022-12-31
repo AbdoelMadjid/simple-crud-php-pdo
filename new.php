@@ -32,7 +32,7 @@ if(isset($_POST['name'])) {
 		//insert data to database		
 		$sql = "INSERT INTO users(name, age, email) VALUES(:name, :age, :email)";
 		$query = $conn->prepare($sql);
-				
+    
 		$query->bindparam(':name', $name);
 		$query->bindparam(':age', $age);
 		$query->bindparam(':email', $email);
@@ -59,7 +59,7 @@ if(isset($_POST['name'])) {
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <title>Simple CRUD PHP</title>
 </head>
@@ -132,7 +132,7 @@ if(isset($_POST['name'])) {
 
 
   <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
